@@ -9,12 +9,14 @@ import org.springframework.context.annotation.ImportResource;
 import org.zbm.acente.ws.HelloWorldWS;
 
 import jakarta.xml.ws.Endpoint;
+import lombok.RequiredArgsConstructor;
  
 @Configuration
 @ImportResource({ "classpath:META-INF/cxf/cxf.xml" })
+@RequiredArgsConstructor
 public class CxfWebServiceConfig {
-    @Autowired
-    private Bus cxfBus;
+
+	private final Bus cxfBus;
  
     @Bean
     public ServletRegistrationBean cxfServlet() {

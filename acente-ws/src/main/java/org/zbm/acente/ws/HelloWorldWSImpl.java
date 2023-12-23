@@ -5,13 +5,13 @@ import java.util.UUID;
 import org.springframework.stereotype.Component;
 import org.zbm.kys.service.AcenteService;
 
-@Component
-public class HelloWorldWSImpl implements HelloWorldWS {
-	private AcenteService acenteService;
+import lombok.RequiredArgsConstructor;
 
-	public HelloWorldWSImpl(AcenteService acenteService) {
-		this.acenteService = acenteService;
-	}
+@Component
+@RequiredArgsConstructor
+public class HelloWorldWSImpl implements HelloWorldWS {
+
+	private final AcenteService acenteService;
 
 	@Override
 	public String createMessage(String name) {

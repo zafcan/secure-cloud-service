@@ -7,7 +7,10 @@ import org.springframework.stereotype.Component;
 import org.zbm.kys.domain.Acente;
 import org.zbm.kys.repository.AcenteRepository;
 
+import lombok.RequiredArgsConstructor;
+
 @Component
+@RequiredArgsConstructor
 public class AcenteRepositoryImpl implements AcenteRepository {
 
 	@Override
