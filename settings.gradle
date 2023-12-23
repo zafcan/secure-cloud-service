@@ -1,5 +1,6 @@
 rootProject.name = 'kullanici-yonetimi'
 
+include 'discovery-service'
 include 'acente-ws'
 include 'acente-rs'
 include 'domain'

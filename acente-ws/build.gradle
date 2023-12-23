@@ -1,8 +1,9 @@
 dependencies {
-	implementation project(':domain')
 	implementation project(':infrastracture')
 	
 	implementation 'org.springframework.boot:spring-boot-starter-web-services'
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+	implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
 	
 	implementation 'org.apache.cxf:cxf-spring-boot-starter-jaxws:4.0.3'
 }
