@@ -1,4 +1,4 @@
-package org.zbm.acente.ws;
+package org.zbm.acente.config;
 import org.apache.cxf.Bus;
 import org.apache.cxf.jaxws.EndpointImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,6 +6,7 @@ import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
+import org.zbm.acente.ws.HelloWorldWS;
 
 import jakarta.xml.ws.Endpoint;
  
