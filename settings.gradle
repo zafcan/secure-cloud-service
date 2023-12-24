@@ -1,4 +1,4 @@
-rootProject.name = 'kullanici-yonetimi'
+rootProject.name = 'secure-cloud-service'
 
 include 'discovery-service'
 include 'gateway-service'
