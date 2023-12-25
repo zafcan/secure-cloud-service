@@ -2,6 +2,7 @@ rootProject.name = 'secure-cloud-service'
 
 include 'discovery-service'
 include 'gateway-service'
+include 'auth-service'
 include 'acente-ws'
 include 'acente-rs'
 include 'domain'

@@ -23,6 +23,9 @@ public class GatewayConfig {
 				.route("acente-ws", r -> r.path("/ws/**")
 						.filters(f -> f.filter(filter))
 						.uri("lb://acente-ws"))
+				.route("auth-service", r -> r.path("/auth/**")
+                        .filters(f -> f.filter(filter))
+                        .uri("lb://auth-service"))
 				.build();
 		// @formatter:on
 
